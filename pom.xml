@@ -4,21 +4,16 @@
   <groupId>omero</groupId>
   <artifactId>insight-bundle</artifactId>
   <packaging>jar</packaging>
-  <version>5.1.0-m5-ice35-b35</version>
+  <version>5.1.0-SNAPSHOT</version>
   <name>insight-bundle</name>
   <url>http://maven.apache.org</url>
   <properties>
     <bioformats.version>5.1.0-SNAPSHOT</bioformats.version>
     <ice.version>3.5.1</ice.version>
     <jdk.version>1.7</jdk.version>
-    <omero.version>5.1.0-m5-ice35-b35</omero.version>
+    <omero.version>5.1.0-m6-ice35-SNAPSHOT</omero.version>
   </properties>
   <dependencies>
-    <dependency>
-      <groupId>omero</groupId>
-      <artifactId>insight-gui</artifactId>
-      <version>${omero.version}</version>
-    </dependency>
     <dependency>
       <groupId>ome</groupId>
       <artifactId>bioformats_package</artifactId>
@@ -38,6 +33,7 @@
       <groupId>omero</groupId>
       <artifactId>insight</artifactId>
       <version>${omero.version}</version>
+      <classifier>gui</classifier>
       <exclusions>
         <exclusion>
           <groupId>org.springframework.ldap</groupId>
@@ -67,6 +63,11 @@
       <id>ome.maven</id>
       <name>ome.maven</name>
       <url>http://artifacts.openmicroscopy.org/artifactory/maven/</url>
+    </repository>
+    <repository>
+      <id>ome.unstable</id>
+      <name>ome.unstable</name>
+      <url>http://artifacts.openmicroscopy.org/artifactory/ome.unstable/</url>
     </repository>
   </repositories>
   <build>
