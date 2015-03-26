@@ -4,14 +4,14 @@
   <groupId>omero</groupId>
   <artifactId>insight-bundle</artifactId>
   <packaging>jar</packaging>
-  <version>5.1.0-SNAPSHOT</version>
+  <version>5.1.0-rc1</version>
   <name>insight-bundle</name>
   <url>http://maven.apache.org</url>
   <properties>
-    <bioformats.version>5.1.0-SNAPSHOT</bioformats.version>
+    <bioformats.version>5.1.0-rc1</bioformats.version>
     <ice.version>3.5.1</ice.version>
     <jdk.version>1.7</jdk.version>
-    <omero.version>5.1.0-m6-ice35-SNAPSHOT</omero.version>
+    <omero.version>5.1.0-rc1-ice35-b38</omero.version>
   </properties>
   <dependencies>
     <dependency>
